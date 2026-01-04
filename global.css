@@ -1,0 +1,25 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@theme {
+  --color-background: var(--color-slate-50);
+  --color-foreground: var(--color-slate-900);
+  --color-muted: var(--color-slate-400);
+  --color-primary: var(--color-purple-500);
+  --color-secondary: var(--color-slate-100);
+  --color-accent: var(--color-purple-400);
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-background: var(--color-slate-900);
+    --color-foreground: var(--color-slate-50);
+    --color-muted: var(--color-slate-300);
+    --color-primary: var(--color-purple-500);
+    --color-secondary: var(--color-slate-600);
+    --color-accent: var(--color-purple-400);
+  }
+}
