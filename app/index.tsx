@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
 import { Text } from "@/components/Text";
 import "@/global.css";
@@ -14,14 +15,7 @@ export default function Index() {
       <View className="gap-4">
         <Input placeholder="Email" />
         <Input placeholder="Password" secureTextEntry />
-        <Pressable
-          className="bg-primary items-center rounded-2xl px-6 py-5"
-          onPress={() => {
-            alert("click!");
-          }}
-        >
-          <Text>Войти</Text>
-        </Pressable>
+        <Button> </Button>
       </View>
       <Pressable>
         <Text className="text-accent!">Восстановить пароль</Text>
