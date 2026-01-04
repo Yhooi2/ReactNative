@@ -15,7 +15,7 @@ export default function Index() {
       <View className="gap-4">
         <Input placeholder="Email" />
         <Input placeholder="Password" secureTextEntry />
-        <Button> </Button>
+        <Button>Выход</Button>
       </View>
       <Pressable>
         <Text className="text-accent!">Восстановить пароль</Text>
